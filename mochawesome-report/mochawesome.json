@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-19T21:25:41.023Z",
+    "end": "2023-10-19T21:25:49.764Z",
+    "duration": 8741,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "765b876a-9bda-486f-a3ab-125b2df2b6dc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\neflix.cy.js",
+      "file": "cypress\\e2e\\neflix.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5ed9fda2-9bc3-4057-bed2-24457a8ccd7a",
+          "title": "Pruebas Neflix",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar titulo, imprimir url y titulo  ",
+              "fullTitle": "Pruebas Neflix Validar titulo, imprimir url y titulo  ",
+              "timedOut": null,
+              "duration": 8529,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture(\"dataNeflix\").then(data => {\n  cy.validaTituloSitio(data.titulo);\n  cy.validaURL(data.url);\n  cy.screenshot();\n});",
+              "err": {},
+              "uuid": "395d47f9-8901-49ac-bd3d-49db7688e75b",
+              "parentUUID": "5ed9fda2-9bc3-4057-bed2-24457a8ccd7a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "395d47f9-8901-49ac-bd3d-49db7688e75b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8529,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
